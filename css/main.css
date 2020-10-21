@@ -87,6 +87,45 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  background-color: #2B799B;
+}
+
+header{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+}
+
+.main-nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  left: 80%;
+  margin: 0px;
+}
+
+.main-nav ul li{
+  margin: 15px;
+}
+
+.main-nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
 
 
 
