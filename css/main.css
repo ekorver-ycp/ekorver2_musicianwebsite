@@ -10,6 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap"
 
 html {
   color: #222;
@@ -88,7 +89,7 @@ textarea {
    ========================================================================== */
 
 body{
-  background-color: #2B799B;
+  background-color: #141414;
 }
 
 header{
@@ -97,6 +98,19 @@ header{
   justify-content: center;
   align-items: center;
   height: 120px;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.banner{
+    position: absolute;
+    left: 0px;
+    top: 115px;
+}
+
+.banner_logo{
+    position: absolute;
+    left: 334.5px;
+    top: 525px;
 }
 
 .main-nav{
@@ -128,9 +142,11 @@ header{
 }
 
 
-
-
-   
+footer{
+  background: #9A0A5C;
+  padding: 10px;
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
@@ -305,4 +321,3 @@ header{
     page-break-after: avoid;
   }
 }
-
