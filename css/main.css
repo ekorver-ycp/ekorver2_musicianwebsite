@@ -89,6 +89,7 @@ textarea {
    ========================================================================== */
 
 body{
+  overflow-x: hidden;
   background-color: #141414;
 }
 
@@ -97,20 +98,26 @@ header{
   width: 100vw;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 100px;
   font-family: 'Gothic A1', sans-serif;
 }
 
 .banner{
-    position: absolute;
-    left: 0px;
-    top: 115px;
+  background-image: url('../images/batsbanner.png');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner_logo{
-    position: absolute;
-    left: 334.5px;
-    top: 525px;
+.banner img{
+ position: relative;
+ top: 280px;
 }
 
 .main-nav{
@@ -141,13 +148,42 @@ header{
   text-decoration: none;
 }
 
+.rectangle {
+  height: 1240px;
+  width: 100vw;
+  position: relative;
+  margin: 0px;
+  top: 100px;
+  background-color: #2B799B;
+  z-index: -5;
+}
+
 
 footer{
   background: #9A0A5C;
-  padding: 10px;
-  text-align: center;
+  width: 100vw;
+  height: 75px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+footer img{
+  width: 20%;
+  position: relative;
+  top: -45px;
+}
+
+.minorlogos{
+  position: relative;
+  top: 60%;
+  left: 35%;
+}
+
+.minorlogos img{
+  margin: 0px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
