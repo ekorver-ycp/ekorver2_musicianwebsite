@@ -276,6 +276,27 @@ p{
     line-height: 25px;
     letter-spacing: 3px;
 }
+
+/* begin contact page*/
+.contactcontent{
+  background-color: #2B799B;
+}
+.floatinginspace img{
+}
+
+/* begin music page*/
+.musicbanner{
+  background-image: url('../images/musicbanner.png'); /* - - Banner placeholder - - */
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
