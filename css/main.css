@@ -278,9 +278,44 @@ p{
 }
 
 /* begin contact page*/
+
+
 .contactcontent{
   background-color: #2B799B;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.contactcontent form{
+  width: 80%;
+}
+
+.contactcontent input{
+  width: 55%;
+  height: 65px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactcontent textarea{
+  width: 55%;
+  height: 165px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formbutton{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2F2F2F;
+  border-radius: 5px;
+  border: none;
+  margin: 2% 0% 0% 0%;
+}
+
 .floatinginspace img{
 }
 
@@ -297,6 +332,72 @@ p{
   justify-content: center;
   align-items: center;
 }
+
+
+/* Begin Tour Page */
+
+.tour_banner{
+  background-image: url('../images/tourbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 600px;
+}
+
+.tour_info{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tourschedule{
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.tourdates{
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 3% 0% 3% 0%;
+}
+
+.tourdates p{
+  color: #000;
+  font-size: 18px;
+}
+
+.oddticket{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2B799B;
+  border-radius: 5px;
+  border: none;
+}
+
+.eventicket{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2F2F2F;
+  border-radius: 5px;
+  border: none;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
