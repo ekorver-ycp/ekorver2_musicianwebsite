@@ -10,12 +10,19 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap"
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+body, ul, li, h1, h2, p{
+ margin: 0;
+ padding: 0;
+ font-family: 'Gothic A1', sans-serif;
 }
 
 /*
@@ -88,7 +95,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Index starts here */
 body{
   overflow-x: hidden;
   background-color: #141414;
@@ -115,6 +121,7 @@ header{
   justify-content: center;
   align-items: center;
 }
+
 .banner img{
  position: relative;
  top: 280px;
@@ -148,80 +155,48 @@ header{
   text-decoration: none;
 }
 
-.imagesindexleft{
-  text-align: left;
-  margin: 40px 0;
-  white-space: nowrap;
-}
-.imagesindexleft li{
-  display: inline-block;
-  width: 600px;
-  margin: 40px;
-}
-.imagesindexleft li img{
-  vertical-align: top;
-  max-width: 100%;
-}
-
-.imagesindexright{
-  text-align: left;
-  margin: 40px 0;
-  white-space: nowrap;
-}
-.imagesindexright li{
-  display: inline-block;
-  width: 600px;
-  margin: 40px;
-}
-.imagesindexright li img{
-  vertical-align: bottom;
-  max-width: 100%;
-}
-
-.rectangle {
-  background-color: #2B799B;
-  height: 1240px;
-  width: auto;
-  position: relative;
-  margin: 0px;
-  z-index: -5;
-}
-
-.buytickets{
-  background-image: url('../images/indexstage.png');
-  background-position: left;
-  background-size: 50%;
-  width: 100vw;
-  background-repeat: no-repeat;
-  height: 500px;
-  margin: 0px;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.buytickets img{
-   position: relative;
-   justify-content: center;
-   align-items: center;
-}
-
-.listento{
-  width: 100vw;
-  height: 500px;
-  background-image: url('../images/indexkooky.png');
-  background-position: right;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  margin: 0px;
+/* Set the main content sections */
+.maincontent{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 125px 0px 0px 0px;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #2B799B;
 }
-.listento img{
-   position: relative;
-   justify-content: center;
-   align-items: center;
+
+/* Gridbox reusable code - We'll discuss this in class */
+
+.gridbox{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
+.right_gridbox,
+.left_gridbox{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Sets up the spacing between the image */
+.left_gridbox img,
+.right_gridbox img{
+  width: 88%;
+  margin: 2%;
+}
+
+.right_gridbox img{
+  width: 84%;
+}
+/* begin footer */
 
 footer{
   background: #9A0A5C;
@@ -232,33 +207,29 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
 footer img{
   width: 20%;
   position: relative;
   top: -45px;
+  justify-content: center;
+  align-items: center;
 }
-.footerlogo{
-  position: relative;
-  left: 22%;
-}
+
 .minorlogos{
   position: relative;
-  left: 45%;
-  top: 40px;
+  top: 60%;
+  left: 35%;
 }
+
 .minorlogos img{
-  width: 10%;
   margin: 0px;
 }
 
-/* Tour starts here */
+/* begin about page*/
 
-.tour_title{
-  font-size: 100;
-}
-
-.tour_banner{
-  background-image: url('../images/tourbanner.png');
+.aboutbanner{
+  background-image: url('../images/batsbanner.png'); /* - - Banner placeholder - - */
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -269,10 +240,175 @@ footer img{
   justify-content: center;
   align-items: center;
 }
-.tour_banner img{
- position: relative;
- top: 280px;
+
+.aboutcontent .gridbox{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
+.aboutcontent .right_gridbox,
+.left_gridbox{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutcontent .left_gridbox img,
+.right_gridbox img{
+  width: 64%;
+  margin: 2%;
+}
+
+.aboutcontent .right_gridbox img{
+  width: 62%;
+}
+p{
+    color: white;
+    width: 450px;
+    margin: auto;
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+/* begin contact page*/
+
+
+.contactcontent{
+  background-color: #2B799B;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactcontent form{
+  width: 80%;
+}
+
+.contactcontent input{
+  width: 55%;
+  height: 65px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactcontent textarea{
+  width: 55%;
+  height: 165px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formbutton{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2F2F2F;
+  border-radius: 5px;
+  border: none;
+  margin: 2% 0% 0% 0%;
+}
+
+.floatinginspace img{
+}
+
+/* begin music page*/
+.musicbanner{
+  background-image: url('../images/musicbanner.png'); /* - - Banner placeholder - - */
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Begin Tour Page */
+
+.tour_banner{
+  background-image: url('../images/tourbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 600px;
+}
+
+.tour_info{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tourschedule{
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.tourdates{
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 3% 0% 3% 0%;
+}
+
+.tourdates p{
+  color: #000;
+  font-size: 18px;
+}
+
+.oddticket{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2B799B;
+  border-radius: 5px;
+  border: none;
+}
+
+.eventicket{
+  width: 120px;
+  height: 45px;
+  color: #fff;
+  background-color: #2F2F2F;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Begin Supershow! Page */
+
+.supershow_banner{
+  background-image: url('../images/tourbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 600px;
+  top: 100px;
+}
+
 
 /* ==========================================================================
    Helper classes
