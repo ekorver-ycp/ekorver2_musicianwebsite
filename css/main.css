@@ -280,12 +280,22 @@ p{
 /* begin contact page*/
 
 
-.contactcontent{
-  background-color: #2B799B;
+.contactcontent {
   padding: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  position: relative;
+  right: -24%;
+}
+
+.contactbg{
+  background-color: #2B799B;
+}
+
+.hamburger {
+  width: 40%;
 }
 
 .contactcontent form{
@@ -316,7 +326,16 @@ p{
   margin: 2% 0% 0% 0%;
 }
 
-.floatinginspace img{
+.floatinginspace {
+  height: 500px;
+}
+
+.floatinginspace img {
+  position: relative;
+  left: 40%;
+  width: 840px;
+  z-index: 10;
+  top: -130px;
 }
 
 /* begin music page*/
@@ -332,6 +351,23 @@ p{
   justify-content: center;
   align-items: center;
 }
+
+.musicinfo{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.musicbg{
+  background-color: #000;
+  border-bottom: 50px solid #2B799B;
+  margin: 2%;
+}
+
 
 
 /* Begin Tour Page */
