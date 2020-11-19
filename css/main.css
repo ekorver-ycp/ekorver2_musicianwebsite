@@ -362,13 +362,25 @@ p{
   padding-bottom: 5%;
 }
 
+.musicbg01{
+  background-image: url('../images/kookspookbg.png');
+  border-bottom: 50px solid #2B799B;
+  margin: 2%;
+}
+.musicbg01 img{
+  height: 300px;
+  width: 300px;
+}
+
 .musicbg{
   background-color: #000;
   border-bottom: 50px solid #2B799B;
   margin: 2%;
 }
-
-
+.musicbg img{
+  height: 300px;
+  width: 300px;
+}
 
 /* Begin Tour Page */
 
@@ -433,7 +445,45 @@ p{
   border: none;
 }
 
+/* Begin supershow Page */
 
+.products{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.products .showgridbox{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.products .rightshow_gridbox,
+.leftshow_gridbox{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.products .leftshow_gridbox img,
+.rightshow_gridbox img{
+  background-color: white;
+  width: 64%;
+  margin: 2%;
+}
+
+.products .rightshow_gridbox img{
+  width: 62%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
