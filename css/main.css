@@ -208,18 +208,19 @@ footer{
   align-items: center;
 }
 
-footer img{
+footer img {
   width: 20%;
   position: relative;
   top: -45px;
   justify-content: center;
   align-items: center;
+  left: 20%;
 }
 
-.minorlogos{
+.minorlogos {
   position: relative;
-  top: 60%;
-  left: 35%;
+  top: 102%;
+  left: 30%;
 }
 
 .minorlogos img{
