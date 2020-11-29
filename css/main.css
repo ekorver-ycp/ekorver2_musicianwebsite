@@ -96,6 +96,7 @@ textarea {
    ========================================================================== */
 
 body{
+  width: 100vw;
   overflow-x: hidden;
   background-color: #141414;
 }
@@ -240,6 +241,13 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.aboutbanner h1 {
+  font-size: 9em;
+  position: relative;
+  top: -30%;
+  right: 30%;
 }
 
 .aboutcontent .gridbox{
@@ -485,6 +493,57 @@ p{
 .products .rightshow_gridbox img{
   width: 62%;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+
+.main-nav ul {
+  left: 0%;
+}
+
+iframe{
+  width: 350px;
+}
+
+.contactcontent {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 180%;
+  position: relative;
+  right: -240px;
+}
+
+.floatinginspace img {
+  position: relative;
+  left: 10%;
+  width: 770px;
+  z-index: 10;
+  top: -130px;
+}
+
+p {
+  color: white;
+  width: 310px;
+  margin: auto;
+  text-align: left;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
